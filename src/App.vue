@@ -1,0 +1,41 @@
+<template>
+  <div id="app">
+    <panel></panel>
+  </div>
+</template>
+
+<script>
+import panel from './components/search-panel'
+export default {
+  components: {
+    panel
+  }
+}
+</script>
+
+<style>
+  html {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+  }
+
+  body {
+    height: 100%;
+    width: 100%;
+    background:url('./assets/background.jpg') no-repeat;
+    background-size: 100%;
+  }
+
+  #app {
+    color: #2c3e50;
+    width: 600px;
+    font-family: Source Sans Pro, Helvetica, sans-serif;
+    text-align: center;
+    position: absolute;
+    top: 35%;
+    left: 50%;
+    margin-left: -300px;
+    margin-top: -100px;
+  }
+</style>
